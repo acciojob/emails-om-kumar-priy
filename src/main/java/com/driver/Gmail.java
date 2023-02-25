@@ -51,7 +51,7 @@ public class Gmail extends Email {
         for(int i=0;i<al.size();i++)
         {
             String d=al.get(i).message;
-            if(d==message)
+            if(d.equals(message))
             {
                 al2.add(al.remove(i));
                 ind--;
@@ -100,7 +100,7 @@ public class Gmail extends Email {
 //        }
         return c;
     }
-
+ 
     public int getInboxSize(){
         // Return number of mails in inbox
         return al.size();
